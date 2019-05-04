@@ -46,7 +46,13 @@ module.exports = function (env, argv) {
                 {
                     test: /\.(woff|woff2|eot|ttf|otf)$/,
                     use: [
-                        'file-loader'
+                        {
+                            loader: 'file-loader',
+                            options: {
+                                outputPath: 'fonts'
+                            }
+                        }
+
                     ]
                 }
             ]
@@ -78,7 +84,8 @@ module.exports = function (env, argv) {
                 alwaysWriteToDisk: true,
                 chunks: ['index', 'vendors'],
                 favicon: "./src/images/logo.jpeg",
-                title: 'logdyn'
+                title: 'logdyn',
+                meta: {viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'}
             }),
             new GenerateSW({
                 clientsClaim: true,
