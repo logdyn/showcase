@@ -77,7 +77,8 @@ module.exports = function (env, argv) {
                 filename: 'index.html',
                 alwaysWriteToDisk: true,
                 chunks: ['index', 'vendors'],
-                favicon: "./src/images/logo.jpeg"
+                favicon: "./src/images/logo.jpeg",
+                title: 'logdyn'
             }),
             new GenerateSW({
                 clientsClaim: true,
@@ -85,7 +86,7 @@ module.exports = function (env, argv) {
             }),
             new WebpackPwaManifest({
                 name: 'Logdyn Showcase',
-                short_name: 'Logdyn',
+                short_name: 'logdyn',
                 description: 'A showcase for the work done as part of Logdyn',
                 background_color: '#FFF',
                 crossorigin: 'use-credentials', //can be null, use-credentials or anonymous
