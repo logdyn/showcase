@@ -1,94 +1,35 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
+        <h1>Logdyn Home IT</h1>
+        <p>Direct-to-you Home IT Support, based in Dorset</p>
+        <ul>
+          <li>General troubleshooting</li>
+          <li>New computer / general hardware setup</li>
+          <li>Printer setup & support</li>
+          <li>Password management setup</li>
+          <li>Virus scanning</li>
+          <li>Cloud storage & backup setup</li>
+          <li>Upgrade advice</li>
+          <li>Device and software upgrades</li>
+        </ul>
+        <div className={styles.content}>
+          <p><b>No fix? No fee!</b></p>
+          <p><b>Enquiries welcome</b></p>
+        </ div>
+        <div className={styles.content}>
+          <p>Jake Lewis</p>
+          <p><b>contact@logdyn.com</b></p>
+          <p>(+44) 07983 477 256</p>
+        </ div>
       </main>
       <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+        <a className="fa fa-facebook" href="https://www.facebook.com/people/Logdyn-Home-Tech-Support/61573207387819/" target="_blank" rel="noopener noreferrer"></a>
+        <a className="fa fa-whatsapp" href="https://api.whatsapp.com/send?phone=%2B447349276012" target="_blank" rel="noopener noreferrer"></a>
+        <a className="fa fa-envelope" href="mailto:contact@logdyn.com" target="_blank" rel="noopener noreferrer"></a>
       </footer>
     </div>
   );
