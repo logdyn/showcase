@@ -33,7 +33,7 @@ export default function Home() {
         </ div>
         <div className={styles.content}>
           <p>Jake Lewis</p>
-          <p><b>contact@logdyn.com</b></p>
+          <p><a href="mailto:contact@logdyn.com" target="_blank" rel="noopener noreferrer"><b>contact@logdyn.com</b></a></p>
           <p><a href="tel:+447983477256">(+44) 07983 477 256</a></p>
         </ div>
       </main>

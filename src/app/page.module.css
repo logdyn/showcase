@@ -88,6 +88,11 @@
   text-align: center;
 }
 
+.content>p>a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 a.primary {
   background: var(--foreground);
   color: var(--background);
