@@ -6,8 +6,10 @@ import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
 export default function Home() {
   return (
     <div className={styles.page}>
-      <main className={styles.main}>
+      <header className={styles.header}>
         <h1>Logdyn Home IT</h1>
+      </header>
+      <main className={styles.main}>
         <div className={styles.tagline}>
           <p>Direct-to-you</p>&nbsp;<p>Home IT Support,</p>&nbsp;<p>based in Dorset</p>
         </div>
