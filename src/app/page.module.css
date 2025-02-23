@@ -34,12 +34,17 @@
   margin-bottom: 12px;
 }
 
-.main code {
-  font-family: inherit;
-  background: var(--gray-alpha-100);
-  padding: 2px 4px;
-  border-radius: 4px;
-  font-weight: 600;
+.services li>div {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services li>div>p {
+  display: inline-block;
+  margin: 0;
+  text-wrap-mode: nowrap;
 }
 
 .main h1 {
@@ -50,12 +55,14 @@
 .tagline {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .tagline>p {
   display: inline-block;
-  margin: auto;
   font-weight: 600;
+  margin: 0;
+  text-wrap-mode: nowrap;
 }
 
 .main .content {
@@ -130,6 +137,12 @@ a.secondary {
 
   .main ul {
     text-align: center;
+    font-size: 4vw;
+    list-style-position: outside;
+  }
+
+  .main li:not(:last-of-type) {
+    margin-bottom: 5px;
   }
 
   .main h1 {

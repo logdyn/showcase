@@ -9,11 +9,15 @@ export default function Home() {
       <main className={styles.main}>
         <h1>Logdyn Home IT</h1>
         <div className={styles.tagline}>
-          <p>Direct-to-you Home IT Support,</p><p>based in Dorset</p>
+          <p>Direct-to-you</p>&nbsp;<p>Home IT Support,</p>&nbsp;<p>based in Dorset</p>
         </div>
-        <ul>
+        <ul className={styles.services}>
           <li>General troubleshooting</li>
-          <li>New computer / general hardware setup</li>
+          <li>
+            <div>
+              <p>New computer / </p><p>general hardware setup</p>
+            </div>
+          </li>
           <li>Printer setup & support</li>
           <li>Password management setup</li>
           <li>Virus scanning</li>
