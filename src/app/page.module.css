@@ -6,8 +6,6 @@
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2;
 
-  display: grid;
-  grid-template-rows: 0px 1fr 80px;
   align-items: center;
   justify-items: center;
   min-height: 100svh;
@@ -20,7 +18,6 @@
   flex-direction: column;
   font-size: 2em;
   gap: 32px;
-  grid-row-start: 2;
 }
 
 .main ul {
@@ -28,7 +25,7 @@
   padding-left: 0;
   margin: auto;
   font-size: 1em;
-  line-height: 24px;
+  line-height: 28px;
   letter-spacing: -0.01em;
   list-style-position: inside;
 }
@@ -47,10 +44,14 @@
 
 .main h1 {
   margin: auto;
-  font-size: 3em;
+  font-size: 7vw;
 }
 
-.main>p {
+.main div.tagline {
+  display: flex;
+}
+
+.tagline>p {
   margin: auto;
   font-weight: 600;
 }
@@ -75,13 +76,15 @@ a.secondary {
 }
 
 .footer {
-  grid-row-start: 3;
   display: flex;
   gap: 24px;
 }
 
+.footer a svg {
+  height: 50px;
+}
 
-.footer a.fa {
+/* a.fa, #fb-link {
   padding: 20px;
   font-size: 30px;
   width: 50px;
@@ -93,10 +96,10 @@ a.secondary {
   opacity: 0.7;
 }
 
-.footer a.fa.fa-facebook {
+a.fa.fa-facebook {
   background: #3B5998;
   color: white;
-}
+} */
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
@@ -111,7 +114,7 @@ a.secondary {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 615px) {
   .page {
     padding: 32px;
     padding-bottom: 80px;
@@ -121,8 +124,12 @@ a.secondary {
     align-items: center;
   }
 
-  .main ol {
+  .main ul {
     text-align: center;
+  }
+
+  .main h1 {
+    font-size: 10vw;
   }
 
   a.secondary {

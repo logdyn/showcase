@@ -1,11 +1,16 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./page.module.css";
+import { faFacebookSquare, faWhatsappSquare } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
         <h1>Logdyn Home IT</h1>
-        <p>Direct-to-you Home IT Support, based in Dorset</p>
+        <div className="tagline">
+          <p>Direct-to-you Home IT Support,</p><p>based in Dorset</p>
+        </div>
         <ul>
           <li>General troubleshooting</li>
           <li>New computer / general hardware setup</li>
@@ -27,9 +32,15 @@ export default function Home() {
         </ div>
       </main>
       <footer className={styles.footer}>
-        <a className="fa fa-facebook" href="https://www.facebook.com/people/Logdyn-Home-Tech-Support/61573207387819/" target="_blank" rel="noopener noreferrer"></a>
-        <a className="fa fa-whatsapp" href="https://api.whatsapp.com/send?phone=%2B447349276012" target="_blank" rel="noopener noreferrer"></a>
-        <a className="fa fa-envelope" href="mailto:contact@logdyn.com" target="_blank" rel="noopener noreferrer"></a>
+        <a href="https://www.facebook.com/people/Logdyn-Home-Tech-Support/61573207387819/" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faFacebookSquare} />
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=%2B447349276012" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faWhatsappSquare} />
+        </a>
+        <a href="mailto:contact@logdyn.com" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faEnvelopeSquare} />
+        </a>
       </footer>
     </div>
   );
