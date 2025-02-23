@@ -8,7 +8,7 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <h1>Logdyn Home IT</h1>
-        <div className="tagline">
+        <div className={styles.tagline}>
           <p>Direct-to-you Home IT Support,</p><p>based in Dorset</p>
         </div>
         <ul>
@@ -28,18 +28,18 @@ export default function Home() {
         <div className={styles.content}>
           <p>Jake Lewis</p>
           <p><b>contact@logdyn.com</b></p>
-          <p>(+44) 07983 477 256</p>
+          <p><a href="tel:+447983477256">(+44) 07983 477 256</a></p>
         </ div>
       </main>
       <footer className={styles.footer}>
         <a href="https://www.facebook.com/people/Logdyn-Home-Tech-Support/61573207387819/" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faFacebookSquare} />
+          <FontAwesomeIcon icon={faFacebookSquare} className={styles.facebookLink}/>
         </a>
         <a href="https://api.whatsapp.com/send?phone=%2B447349276012" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faWhatsappSquare} />
+          <FontAwesomeIcon icon={faWhatsappSquare} className={styles.whatsappLink}/>
         </a>
         <a href="mailto:contact@logdyn.com" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faEnvelopeSquare} />
+          <FontAwesomeIcon icon={faEnvelopeSquare} className={styles.emailLink}/>
         </a>
       </footer>
     </div>

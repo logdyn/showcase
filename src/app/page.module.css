@@ -47,11 +47,13 @@
   font-size: 7vw;
 }
 
-.main div.tagline {
+.tagline {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .tagline>p {
+  display: inline-block;
   margin: auto;
   font-weight: 600;
 }
@@ -80,12 +82,7 @@ a.secondary {
   gap: 24px;
 }
 
-.footer a svg {
-  height: 50px;
-}
-
-/* a.fa, #fb-link {
-  padding: 20px;
+.footer>a>svg {
   font-size: 30px;
   width: 50px;
   text-align: center;
@@ -96,10 +93,17 @@ a.secondary {
   opacity: 0.7;
 }
 
-a.fa.fa-facebook {
-  background: #3B5998;
-  color: white;
-} */
+.facebookLink {
+  color: #3B5998;
+}
+
+.whatsappLink {
+  color: #25D366;
+}
+
+.emailLink {
+  color: #B65FCF;
+}
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
